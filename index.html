@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,43 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <form class="login-form" action="/login/" method="post">        
+        <table>
+            <tr>
+                <td colspan="2">Вход в личный кабинет</td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="login-form__label" for="loginField">Логин</label>
+                </td>
+                <td>
+                    <input class="login-form__input" id="loginField" type="text" name="login" maxlength="50" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label class="login-form__label" for="passwordField">Пароль</label>
+                </td>
+                <td>
+                    <input class="login-form__input" id="passwordField" type="password" name="password" maxlength="50" size="20">
+                    <img class="login-form__img" src="img/eye-icon.png" alt="eye-icon">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button">Войти</div>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            Забыли пароль? <a href="#">Восстановите его!</a>
+        </p>
+
+    </form>
+
+
     
     <script src="js/main.js"></script>
 </body>
